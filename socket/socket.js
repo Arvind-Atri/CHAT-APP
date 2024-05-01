@@ -10,7 +10,7 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
 	cors: cors: {
-    origin: true,
+    origin: "http://localhost:3000",
     credentials: true,
   },
   allowEIO3: true,
