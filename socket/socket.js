@@ -4,7 +4,8 @@
 const {Server} =require("socket.io");
 const http =require("http");
 const express=require("express")
-
+const cors=require("cors")
+app.use(cors);
 const app = express();
 
 const server = http.createServer(app);
